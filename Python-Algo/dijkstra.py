@@ -106,5 +106,6 @@ if __name__ == "__main__":
     ])
     #distances, prev_v = graph.bellman_ford("a")
     #print(graph.path("a", "i", prev_v))
-    #print(graph.dijkstra())
+    #print(graph.dijkstra("a","i"))
+    print(graph.bellman_ford("a"))
     print(graph.kruskal())
