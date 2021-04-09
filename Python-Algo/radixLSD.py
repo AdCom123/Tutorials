@@ -1,4 +1,5 @@
 import random
+import timeit
 
 
 def radix(unsorted_list): # falls bugs 
@@ -26,4 +27,9 @@ def radix(unsorted_list): # falls bugs
 
 
 l=[random.randint(0,999) for _ in range(100)]
-print(radix(l))
+
+
+l = radix(l)
+print(l)
+print(timeit.timeit("radix(l)", globals=locals(), number=100000))
+
