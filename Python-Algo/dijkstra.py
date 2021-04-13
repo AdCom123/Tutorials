@@ -79,7 +79,7 @@ class Graph:
     def kruskal(self):
         mst = []
         self.edges = sorted(self.edges, key=lambda i: i[2])
-        prev_v = {v: v for v in self.vertices()}
+        prev_v = {v: v for v in self.vertices()} # vorgänger drin
         amount_edges = 0
 
         i = 0
